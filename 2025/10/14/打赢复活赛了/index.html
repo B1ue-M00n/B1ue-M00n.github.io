@@ -1,230 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>打赢复活赛了 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="复活了My blog 复活了！ 由于之前我github两步验证的码没保存，弄了半天还是修不好，放弃了。。之前的东西都无了  一些近况今天是2025.10.14下午3点，有点困了，无聊写点东西记录记录最近的事情。 从九月十号左右就开始投简历找实习了，一直没下文。。几乎O个能约上面试，我都怀疑我简历是哪里有问题？？ 在学校的时间还是很舒服的，每天有好吃的，有充足的时间学习。但是现在真的需要找实习了，还">
-<meta property="og:type" content="article">
-<meta property="og:title" content="打赢复活赛了">
-<meta property="og:url" content="http://example.com/2025/10/14/%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B%E4%BA%86/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="复活了My blog 复活了！ 由于之前我github两步验证的码没保存，弄了半天还是修不好，放弃了。。之前的东西都无了  一些近况今天是2025.10.14下午3点，有点困了，无聊写点东西记录记录最近的事情。 从九月十号左右就开始投简历找实习了，一直没下文。。几乎O个能约上面试，我都怀疑我简历是哪里有问题？？ 在学校的时间还是很舒服的，每天有好吃的，有充足的时间学习。但是现在真的需要找实习了，还">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/images/%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B%E4%BA%86/preview.jpg">
-<meta property="og:image" content="http://example.com/images/%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B%E4%BA%86/image-20251014153216738.png">
-<meta property="article:published_time" content="2025-10-14T07:14:37.000Z">
-<meta property="article:modified_time" content="2025-10-14T07:35:38.438Z">
-<meta property="article:author" content="John Doe">
-<meta property="article:tag" content="杂谈">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B%E4%BA%86/preview.jpg">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+extends includes/layout.pug
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+block content
+  #post
+    if top_img === false
+      include includes/header/post-info.pug
 
-  
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+    article#article-container.container.post-content
+      if theme.noticeOutdate.enable && page.noticeOutdate !== false
+        include includes/post/outdate-notice.pug
+      else
+        !=page.content
+    include includes/post/post-copyright.pug
+    .tag_share
+      if (page.tags.length > 0 && theme.post_meta.post.tags)
+        .post-meta__tag-list
+          each item, index in page.tags.data
+            a(href=url_for(item.path)).post-meta__tags #[=item.name]
+      include includes/third-party/share/index.pug
 
-<meta name="generator" content="Hexo 7.3.0"></head>
+    if theme.reward.enable && theme.reward.QR_code
+      !=partial('includes/post/reward', {}, {cache: true})
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
+    //- ad
+    if theme.ad && theme.ad.post
+      .ads-wrap!=theme.ad.post
 
-      <div class="outer">
-        <section id="main"><article id="post-打赢复活赛了" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/10/14/%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B%E4%BA%86/" class="article-date">
-  <time class="dt-published" datetime="2025-10-14T07:14:37.000Z" itemprop="datePublished">2025-10-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      打赢复活赛了
-    </h1>
-  
+    if theme.post_pagination
+      include includes/pagination.pug
+    if theme.related_post && theme.related_post.enable
+      != related_posts(page,site.posts)
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="复活了"><a href="#复活了" class="headerlink" title="复活了"></a>复活了</h1><p>My blog 复活了！</p>
-<p>由于之前我github两步验证的码没保存，弄了半天还是修不好，放弃了。。之前的东西都无了 </p>
-<h1 id="一些近况"><a href="#一些近况" class="headerlink" title="一些近况"></a>一些近况</h1><p>今天是2025.10.14下午3点，有点困了，无聊写点东西记录记录最近的事情。</p>
-<p>从九月十号左右就开始投简历找实习了，一直没下文。。几乎O个能约上面试，我都怀疑我简历是哪里有问题？？</p>
-<p>在学校的时间还是很舒服的，每天有好吃的，有充足的时间学习。但是现在真的需要找实习了，还没找到有点焦虑。某种意义上的围城罢了，等真正去了又会很怀念校园的时光吧。</p>
-<p>希望这学期能找到甲方大厂的实习，那就圆满了，唯一缺点就是又要和女朋友分开了，真的舍不得。如果去了别的地方，将会是最长的一次异地（3个月+寒假）</p>
-<p><img src="/images/%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B%E4%BA%86/preview.jpg" alt="preview"></p>
-<h1 id="关于博客的图片管理"><a href="#关于博客的图片管理" class="headerlink" title="关于博客的图片管理"></a>关于博客的图片管理</h1><p>下次忘了照抄就好了，包好用的：</p>
-<p><img src="/images/%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B%E4%BA%86/image-20251014153216738.png" alt="image-20251014153216738"></p>
-<p>然后每次写好文档后，用一个Py脚本处理一下路径，就可以把它们发到网上去了。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">process_markdown_files</span>(<span class="params">directory_path</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    遍历指定目录下的所有.md文件，并替换图片路径中的 &#x27;/&#x27; 为 &#x27;/&#x27;。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">        directory_path (str): 要处理的Hexo博客文章目录路径。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 检查目录是否存在</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.isdir(directory_path):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;错误：目录 &#x27;<span class="subst">&#123;directory_path&#125;</span>&#x27; 不存在或不是一个有效的目录。&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;开始处理目录：<span class="subst">&#123;directory_path&#125;</span>\n&quot;</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 统计修改了多少文件</span></span><br><span class="line">    files_modified_count = <span class="number">0</span></span><br><span class="line">    <span class="comment"># 统计处理了多少文件</span></span><br><span class="line">    files_processed_count = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 遍历目录下的所有文件</span></span><br><span class="line">    <span class="keyword">for</span> filename <span class="keyword">in</span> os.listdir(directory_path):</span><br><span class="line">        <span class="comment"># 只处理.md文件</span></span><br><span class="line">        <span class="keyword">if</span> filename.endswith(<span class="string">&quot;.md&quot;</span>):</span><br><span class="line">            files_processed_count += <span class="number">1</span></span><br><span class="line">            file_path = os.path.join(directory_path, filename)</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                <span class="comment"># 读取文件内容</span></span><br><span class="line">                <span class="keyword">with</span> <span class="built_in">open</span>(file_path, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                    original_content = f.read()</span><br><span class="line"></span><br><span class="line">                <span class="comment"># 执行替换操作</span></span><br><span class="line">                <span class="comment"># 将 &#x27;/&#x27; 替换为 &#x27;/&#x27;</span></span><br><span class="line">                modified_content = original_content.replace(<span class="string">&quot;/&quot;</span>, <span class="string">&quot;/&quot;</span>)</span><br><span class="line"></span><br><span class="line">                <span class="comment"># 检查内容是否真的发生了改变</span></span><br><span class="line">                <span class="keyword">if</span> original_content != modified_content:</span><br><span class="line">                    <span class="comment"># 如果有变化，则写回文件</span></span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(file_path, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        f.write(modified_content)</span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">f&quot;[已更新] <span class="subst">&#123;filename&#125;</span>&quot;</span>)</span><br><span class="line">                    files_modified_count += <span class="number">1</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    <span class="comment"># 如果没有变化，则不做任何操作</span></span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">f&quot;[无需更改] <span class="subst">&#123;filename&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line">            <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">f&quot;处理文件 <span class="subst">&#123;filename&#125;</span> 时发生错误: <span class="subst">&#123;e&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\n--------------------&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;处理完成！&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;总共检查了 <span class="subst">&#123;files_processed_count&#125;</span> 个 Markdown 文件。&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;成功更新了 <span class="subst">&#123;files_modified_count&#125;</span> 个文件。&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># --- 主程序入口 ---</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    <span class="comment"># 请在这里修改为你的实际路径</span></span><br><span class="line">    <span class="comment"># 使用 r&#x27;&#x27; 可以防止反斜杠被转义</span></span><br><span class="line">    hexo_posts_path = <span class="string">r&#x27;C:\Users\lenovo\Documents\Hexo-blog\source\_posts&#x27;</span></span><br><span class="line">    </span><br><span class="line">    process_markdown_files(hexo_posts_path)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/10/14/%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B%E4%BA%86/" data-id="cmgq8lto800000cvcbyc07nq3" data-title="打赢复活赛了" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9D%82%E8%B0%88/" rel="tag">杂谈</a></li></ul>
-
-    </footer>
-  </div>
-  
-    
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%B0%88/" rel="tag">杂谈</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 10px;">杂谈</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/10/">October 2025</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2025/10/14/%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B%E4%BA%86/">打赢复活赛了</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2025 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+    if page.comments !== false && theme.comments.use
+      - var commentsJsLoad = true
+      !=partial('includes/third-party/comments/index', {}, {cache: true})
